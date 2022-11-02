@@ -1,0 +1,257 @@
+/*****************
+ * AULA SELETORES
+
+
+/*
+**** Seletor Universal 
+
+
+* {
+	border: 1px solid red;
+}
+
+/*
+**** Seletor de Texto 
+
+
+h1 {
+	color: green;
+} 
+
+/*
+**** Seletor de Classe 
+
+
+.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+}
+
+/*
+**** Seletor de Id 
+
+
+#cabecalho {
+	border: 1px solid blue;
+}
+
+/*
+**** Seletor de Filho
+
+
+li>a {
+	color: darkred;
+	text-decoration: none;
+}
+
+/*
+**** Seletor de Descendente
+
+
+div a {
+	color: greenyellow;
+}
+
+
+**** Seletor de Irmão Adjacente
+
+
+h1+p {
+	color: yellow;
+}
+
+/*
+**** Seletor de Irmão Geral
+
+
+h1~p {
+	color: lightpink;
+}
+
+*/
+
+/***************
+ AULA HERANÇA
+
+body {
+	color: red;
+	border: 1px solid blue;
+}
+*/
+
+/**************
+AULA ESPECIFICIDADE
+
+(selestores iguais --> o último é aplicado com exceção do !important
+
+p {
+	color: blue;
+}
+
+p {
+	color: red;
+}
+
+*/
+
+/* Se um seletor for mais específico que outro, a regra mais específica será aplicada.
+(Terá precedência sobre as regras gerais) 
+
+* {
+	color: red;
+}
+
+h2 {/*3*/
+	/*color: blue;
+}*/
+/*
+h2.verde {/*2*/
+	/*color: green;
+}*/
+/*
+h2#amarelo {/*1*/
+	/*color: yellow;
+}*/
+
+/*****************
+AULA NAVEGAÇÃO VERTICAL*/
+/*
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	padding: 5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center;
+} */
+
+
+/****************** 
+BARRA DE NAVEGAÇÃO VERTICAL
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a {
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #FFF;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #FFF;
+}
+
+*/
+
+/*************
+BARRA DE NAVEGAÇÃO HORIZONTAL
+
+
+ul#navegacao {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 720px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+ul#navegacao li {
+	float: left;
+}
+
+ul#navegacao a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #FFF;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+ul#navegacao .primeiro a {
+	background: none;
+}
+
+ul#navegacao a:hover {
+	color: #085662;
+	background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+	color: #085662;
+	background: #44cade;
+
+*/
+
+/******************
+BARRA DE NAVEGAÇÃO COM ABAS
+*/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+ul li {
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
+	color: #FFF;
+}
+
+ul a:hover {
+	color: #894a1f;
+	background: ;
+}
+
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
